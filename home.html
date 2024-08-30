@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cook Eat and Share</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Cook Eat and Share</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#submit">Submit Recipe</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Cook Eat and Share</h1>
+            <p>Discover and share amazing recipes from around the world.</p>
+            <a href="#recipes" class="btn">Browse Recipes</a>
+        </div>
+    </section>
+
+    <section id="recipes" class="recipes-section">
+        <h2>Latest Recipes</h2>
+        <div class="recipes-container">
+            
+        </div>
+    </section>
+
+    <section id="submit" class="submit-section">
+        <h2>Submit Your Recipe</h2>
+        <form>
+            <label for="recipe-title">Recipe Title:</label>
+            <input type="text" id="recipe-title" name="recipe-title" required>
+
+            <label for="recipe-description">Description:</label>
+            <textarea id="recipe-description" name="recipe-description" required></textarea>
+
+            <label for="recipe-image">Upload Image:</label>
+            <input type="file" id="recipe-image" name="recipe-image" accept="image/*" required>
+
+            <label for="recipe-ingredients">Ingredients:</label>
+            <textarea id="recipe-ingredients" name="recipe-ingredients" required></textarea>
+
+            <label for="recipe-steps">Steps:</label>
+            <textarea id="recipe-steps" name="recipe-steps" required></textarea>
+
+            <button type="submit" class="btn">Submit Recipe</button>
+        </form>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>Welcome to Cook Eat and Share! We are a community of food enthusiasts who love to discover, share, and enjoy recipes from around the world. Whether you're a beginner or an experienced cook, you'll find something to inspire your next meal. Join us on this culinary adventure and share your own creations with our growing community.</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feedback, or just want to say hello, feel free to reach out to us. We'd love to hear from you!</p>
+        <form>
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <label for="contact-message">Message:</label>
+            <textarea id="contact-message" name="contact-message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Cook Eat and Share. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook"></a>
+                <a href="#"><img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/575/small/youtube-logo-youtube-icon-transparent-free-png.png" alt="Youtube"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram"></a>
+                <a href="#"><img src="https://cdn-icons-png.freepik.com/256/145/145812.png?semt=ais_hybrid" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

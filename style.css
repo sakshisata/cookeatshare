@@ -1,0 +1,395 @@
+/* Login and Signup Styles */
+.login-section, .signup-section {
+    padding: 60px 20px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.login-section h2, .signup-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #4CAF50;
+}
+
+.login-section form, .signup-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+    border-radius: 20px;
+}
+
+.nav-links li a:hover {
+    background: #fff;
+    color: #4CAF50;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background: url('https://images.unsplash.com/photo-1490645935967-10de6ba17061') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.hero-section .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-section .hero-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero-section .btn {
+    background: #ff5722;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    background: #fff;
+    color: #ff5722;
+    transform: scale(1.1);
+}
+
+/* Recipes Section Styles */
+.recipes-section {
+    padding: 60px 20px;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.recipes-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #4CAF50;
+}
+
+.recipes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.recipe-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-details {
+    padding: 20px;
+}
+
+.recipe-details h3 {
+    margin: 15px 0;
+    font-size: 24px;
+}
+
+.recipe-details p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.recipe-details .btn {
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.recipe-details .btn:hover {
+    background: #fff;
+    color: #4CAF50;
+    transform: scale(1.1);
+}
+
+/* Submit Section Styles */
+.submit-section {
+    padding: 60px 20px;
+    background: #f0f0f0;
+}
+
+.submit-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #4CAF50;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+}
+
+form button {
+    background: #4CAF50;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background: #fff;
+    color: #4CAF50;
+    transform: scale(1.1);
+}
+
+/* About Section Styles */
+.about-section {
+    padding: 60px 20px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #4CAF50;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    padding: 60px 20px;
+    background: #f0f0f0;
+    margin-top: 20px;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #4CAF50;
+}
+
+.contact-section p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-section form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.contact-section form button {
+    background: #4CAF50;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-section form button:hover {
+    background: #fff;
+    color: #4CAF50;
+    transform: scale(1.1);
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-active .nav-links {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-section .hero-content p {
+        font-size: 16px;
+    }
+
+    .recipes-container {
+        grid-template-columns: 1fr;
+    }
+}
+
